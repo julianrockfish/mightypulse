@@ -18,3 +18,25 @@ h1 {
 input {
 	margin-bottom: 10px;
 }
+
+h2 {
+	font-size: 30px;
+	line-height: 45px; 
+}
+
+#dashboard {
+	background-color: #EBEADF;
+}
+
+#shield {
+	width: 50px;
+	margin-top: 5px;
+	padding-right: 10px;
+	float: left;
+	clear: both;
+}
+
+.header {
+
+	clear: both;
+}

@@ -1,0 +1,94 @@
+<DOCTYPE! html> 
+
+<html> 
+
+
+<head> 
+
+<title> Mightypulse </title> 
+
+<meta charset="utf-8"> 
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="assets/css/healthy.css">
+
+<script src="assets/scripts/Chart.js"></script>
+
+</head> 
+
+<body> 
+
+	<div class="container"> 
+
+		<header> 
+
+			<img id="shield" src="assets/images/shield.png">
+			<h1> Mightypulse </h1> 
+			 
+
+		</header> 
+
+	<div id="dashboard"> 
+
+	<h2> Current </h2> 
+
+			<section id="weather">
+			</section> 
+
+			<section id="mileage"> 
+				<h3> 181 miles </h3> 
+			</section> 
+
+			<section id="intake"> 
+				<h3> 5,000 calories eaten </h3> 
+			</section> 
+
+					<section id="burn"> 
+				<h3> 5,241 calories burnt </h3> 
+			</section> 
+
+			<section id="moodswings">
+
+				<h3> Mood Fluctuation </h3> 
+
+				<canvas id="canvas" height="200" width="600"></canvas>
+					
+					<script>
+
+						var lineChartData = {
+							labels : ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+							datasets : [
+								{
+									fillColor : "rgba(220,220,220,0.5)",
+									strokeColor : "rgba(220,220,220,1)",
+									pointColor : "rgba(220,220,220,1)",
+									pointStrokeColor : "#fff",
+									data : [65,59,90,81,56,55,40]
+								},
+								{
+									fillColor : "rgba(151,187,205,0.5)",
+									strokeColor : "rgba(151,187,205,1)",
+									pointColor : "rgba(151,187,205,1)",
+									pointStrokeColor : "#fff",
+									data : [28,48,40,19,96,27,100]
+								}
+							]
+							
+						}
+
+					var myLine = new Chart(document.getElementById("canvas").getContext("2d")).Line(lineChartData);
+					
+					</script>
+
+			</section> 
+
+
+
+		</div> 
+
+ </div> 
+
+</body> 
+
+</html> 
